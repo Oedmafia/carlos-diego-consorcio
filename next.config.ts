@@ -1,7 +1,19 @@
-import type { NextConfig } from "next";
+﻿import type { NextConfig } from "next";
+
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
+let repo = '';
+if (isGithubActions) {
+  // Ajusta o caminho base quando estiver rodando no GitHub Pages
+  repo = '/carlos-diego-consorcio';
+}
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export",
+  basePath: repo,
+  assetPrefix: repo,
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
