@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Phone, Shield, Calculator, Clock, ChevronDown, Star, MessageCircle, MapPin, CheckCircle2, Menu, X, Award } from "lucide-react";
 import Image from "next/image";
+import carlosImg from "../../public/carlos-diego.jpg";
 import { useState, useEffect } from "react";
 
 // ============================================================
@@ -87,7 +88,7 @@ export default function Home() {
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="flex flex-col items-center text-center md:flex-row md:text-left md:items-end gap-6 md:gap-10 mb-8">
               {/* Photo */}
               <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-3xl overflow-hidden border-2 border-primary/30 shadow-xl shadow-primary/10 shrink-0">
-                <Image src="/carlos-diego.jpg" alt="Carlos Diego - Consultor" fill sizes="160px" className="object-cover" priority />
+                <Image src={carlosImg} alt="Carlos Diego - Consultor" fill sizes="160px" className="object-cover" priority />
                 {/* Online badge */}
                 <div className="absolute bottom-2 right-2 w-4 h-4 rounded-full bg-green-500 border-2 border-background shadow-sm" />
               </div>
@@ -195,7 +196,7 @@ export default function Home() {
                 </div>
               </motion.div>
               <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="relative aspect-[3/4] md:aspect-square rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-                <Image src="/carlos-diego.jpg" alt="Carlos Diego" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover object-top" />
+                <Image src={carlosImg} alt="Carlos Diego" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover object-top" />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
               </motion.div>
             </div>
@@ -263,7 +264,7 @@ export default function Home() {
           <div className="max-w-2xl mx-auto text-center">
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}>
               <div className="w-20 h-20 rounded-3xl overflow-hidden border-2 border-primary/30 mx-auto mb-6 relative shadow-xl shadow-primary/10">
-                <Image src="/carlos-diego.jpg" alt="Carlos Diego" fill sizes="80px" className="object-cover" />
+                <Image src={carlosImg} alt="Carlos Diego" fill sizes="80px" className="object-cover" />
               </div>
               <h2 className="text-2xl md:text-4xl font-bold mb-3">Vamos conversar?</h2>
               <p className="text-sm text-muted-foreground mb-8 max-w-md mx-auto">
