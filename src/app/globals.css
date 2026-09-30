@@ -19,7 +19,7 @@
 :root {
   --background: oklch(0.10 0.02 15);
   --foreground: oklch(0.98 0 0);
-  --primary: oklch(0.60 0.22 25);
+  --primary: oklch(0.60 0.18 250);
   --primary-foreground: oklch(0.98 0 0);
   --muted: oklch(0.20 0.03 15);
   --muted-foreground: oklch(0.65 0.02 15);
@@ -42,8 +42,8 @@
   }
 }
 
-@utility text-gradient-red {
+@utility text-gradient-blue {
   color: transparent;
   background-clip: text;
-  background-image: linear-gradient(to right, var(--color-red-400), var(--color-rose-500), var(--color-orange-400));
+  background-image: linear-gradient(to right, var(--color-blue-400), var(--color-indigo-500), var(--color-cyan-400));
 }

@@ -81,14 +81,14 @@ export default function Home() {
         <section className="relative pt-20 pb-10 md:pt-28 md:pb-20 px-5 overflow-hidden">
           {/* Background glow */}
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/15 blur-[120px] rounded-full -z-10" />
-          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-red-900/10 blur-[100px] rounded-full -z-10" />
+          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-900/10 blur-[100px] rounded-full -z-10" />
 
           <div className="max-w-6xl mx-auto">
             {/* Photo + Intro Card */}
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="flex flex-col items-center text-center md:flex-row md:text-left md:items-end gap-6 md:gap-10 mb-8">
               {/* Photo */}
               <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-3xl overflow-hidden border-2 border-primary/30 shadow-xl shadow-primary/10 shrink-0">
-                <Image src={carlosImg} alt="Carlos Diego - Consultor" fill sizes="160px" className="object-cover" priority />
+                <Image src={carlosImg} alt="Carlos Diego - Consultor" fill sizes="160px" className="object-cover object-top" priority />
                 {/* Online badge */}
                 <div className="absolute bottom-2 right-2 w-4 h-4 rounded-full bg-green-500 border-2 border-background shadow-sm" />
               </div>
@@ -101,7 +101,7 @@ export default function Home() {
                   Carlos Diego
                 </h1>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-md">
-                  Consultor Especialista em <span className="text-gradient-red font-bold">Consórcios</span> e Vendas com mais de +100.5 Milhões em Resultados.
+                  Consultor Especialista em <span className="text-gradient-blue font-bold">Consórcios</span> e Vendas com mais de +100.5 Milhões em Resultados.
                 </p>
               </div>
             </motion.div>
@@ -109,7 +109,7 @@ export default function Home() {
             {/* Value Proposition */}
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="mb-8">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight mb-4">
-                Seu carro <span className="text-gradient-red">zero</span> sem juros,<br className="sm:hidden" /> com estratégia.
+                Seu carro <span className="text-gradient-blue">zero</span> sem juros,<br className="sm:hidden" /> com estratégia.
               </h2>
               <p className="text-sm md:text-base text-muted-foreground max-w-lg leading-relaxed">
                 Eu uso <strong className="text-foreground">lance embutido + matemática</strong> para acelerar sua contemplação. Sem depender de sorte, sem juros de banco.
@@ -150,7 +150,7 @@ export default function Home() {
         <section id="servicos" className="py-16 md:py-24 px-5 border-t border-white/5">
           <div className="max-w-6xl mx-auto">
             <div className="mb-10">
-              <h2 className="text-2xl md:text-4xl font-bold mb-3">Por que escolher o <span className="text-gradient-red">consórcio</span> comigo?</h2>
+              <h2 className="text-2xl md:text-4xl font-bold mb-3">Por que escolher o <span className="text-gradient-blue">consórcio</span> comigo?</h2>
               <p className="text-sm text-muted-foreground max-w-lg">Atendimento pessoal, humanizado e focado em resultados reais para o cliente.</p>
             </div>
 
@@ -182,7 +182,7 @@ export default function Home() {
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold mb-4">
                   Sobre mim
                 </div>
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">Seu consultor, <span className="text-gradient-red">não um vendedor.</span></h2>
+                <h2 className="text-2xl md:text-4xl font-bold mb-4">Seu consultor, <span className="text-gradient-blue">não um vendedor.</span></h2>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                   Meu nome é Carlos Diego e há mais de 7 anos ajudo clientes no Brasil e no exterior a conquistarem seu carro zero, imóveis e outros bens com planejamento.
                 </p>
@@ -206,7 +206,7 @@ export default function Home() {
         {/* ===== TESTIMONIALS ===== */}
         <section id="depoimentos" className="py-16 md:py-24 px-5 border-t border-white/5">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl md:text-4xl font-bold mb-10 text-center">O que meus clientes <span className="text-gradient-red">dizem</span></h2>
+            <h2 className="text-2xl md:text-4xl font-bold mb-10 text-center">O que meus clientes <span className="text-gradient-blue">dizem</span></h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {[
                 { name: "Lucas M.", car: "VW Polo", city: "Campina Grande", quote: "O Carlos calculou meu lance certinho. Em 4 meses eu tava com o carro na garagem. Atendimento nota 10." },
@@ -233,7 +233,7 @@ export default function Home() {
         {/* ===== FAQ ===== */}
         <section id="faq" className="py-16 md:py-24 px-5 border-t border-white/5">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl md:text-4xl font-bold mb-8 text-center">Dúvidas <span className="text-gradient-red">frequentes</span></h2>
+            <h2 className="text-2xl md:text-4xl font-bold mb-8 text-center">Dúvidas <span className="text-gradient-blue">frequentes</span></h2>
             <div className="space-y-3">
               {[
                 { q: "É realmente sem juros?", a: "Sim! No consórcio você paga apenas uma taxa de administração fixa, muito menor que os juros de um financiamento." },
@@ -264,7 +264,7 @@ export default function Home() {
           <div className="max-w-2xl mx-auto text-center">
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}>
               <div className="w-20 h-20 rounded-3xl overflow-hidden border-2 border-primary/30 mx-auto mb-6 relative shadow-xl shadow-primary/10">
-                <Image src={carlosImg} alt="Carlos Diego" fill sizes="80px" className="object-cover" />
+                <Image src={carlosImg} alt="Carlos Diego" fill sizes="80px" className="object-cover object-top" />
               </div>
               <h2 className="text-2xl md:text-4xl font-bold mb-3">Vamos conversar?</h2>
               <p className="text-sm text-muted-foreground mb-8 max-w-md mx-auto">
